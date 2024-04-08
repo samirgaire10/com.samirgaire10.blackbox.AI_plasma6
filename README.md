@@ -13,7 +13,7 @@
 Just fork or clone the project :
 
 run the command on terminal
-`git clone https://github.com/samirgaire10/blackbox.AI.git`
+`git clone  https://github.com/samirgaire10/com.samirgaire10.blackbox.AI.git `
 
 move the folder to `/usr/share/plasma/plasmoids/`
 !!! sudo is required !!!
