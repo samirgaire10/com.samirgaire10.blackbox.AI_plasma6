@@ -7,14 +7,13 @@
             }
         ],
         "Category": "Online Services",
-        "Description": "Add a blackbox AI on your desktop.",
+        "Description": "Add a blackbox-gpt desktop.",
         "Icon": "applications-internet",
-        "Id": "com.samirgaire10.blackbox.ai.plasma6",
+        "Id": "com.samirgaire10.blackbox.AI_plasma6",
         "License": "GPL-2.0+",
-        "Name": "blackbox.ai",
-        "Website": "https://github.com/samirgaire10/com.samirgaire10.blackbox.AI.git",
-        "github": "https://github.com/samirgaire10/"
-
+        "Name": "blackboxAi gpt",
+        "Website": "https://github.com/samirgaire10/com.samirgaire10.blackbox.AI_plasma6.git",
+        "github": "https://github.com/samirgaire10"
     },
     "X-Plasma-API-Minimum-Version": "6.0"
 }
