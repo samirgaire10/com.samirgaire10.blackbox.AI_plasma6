@@ -15,7 +15,7 @@ import org.kde.kirigami 2.20 as Kirigami
 import org.kde.plasma.plasmoid 2.0
 
 PlasmoidItem {
-    id: root
+    id: blackboxroot
 
     switchWidth: Kirigami.Units.gridUnit * 16
     switchHeight: Kirigami.Units.gridUnit * 23
@@ -40,9 +40,9 @@ PlasmoidItem {
             acceptedButtons: Qt.LeftButton
 
             onPressedChanged: if (pressed) {
-                wasExpanded = root.expanded;
+                wasExpanded = blackboxroot.expanded;
             }
-            onTapped: root.expanded = !wasExpanded
+            onTapped: blackboxroot.expanded = !wasExpanded
         }
 
         Kirigami.Icon {
@@ -67,7 +67,7 @@ PlasmoidItem {
          
 
             WebEngineView {
-                id: webview
+                id: webviewblackbox
                 anchors.fill: parent
                 onUrlChanged: plasmoid.configuration.url = url;
                 Component.onCompleted: url = plasmoid.configuration.url;
@@ -144,9 +144,9 @@ PlasmoidItem {
                 acceptedButtons: Qt.BackButton | Qt.ForwardButton
                 onPressed: mouse => {
                     if (mouse.button === Qt.BackButton) {
-                        webview.goBack();
+                        webviewblackbox.goBack();
                     } else if (mouse.button === Qt.ForwardButton) {
-                        webview.goForward();
+                        webviewblackbox.goForward();
                     }
                 }
             }
