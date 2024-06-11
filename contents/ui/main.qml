@@ -74,6 +74,18 @@ PlasmoidItem {
 
                 readonly property bool useMinViewWidth : plasmoid.configuration.useMinViewWidth
 
+  WebEngineProfile {
+            id: blackboxProfile
+            httpUserAgent: getUserAgent()
+            storageName: "blackbox"
+            offTheRecord: false
+            httpCacheType: WebEngineProfile.DiskHttpCache
+            persistentCookiesPolicy: WebEngineProfile.ForcePersistentCookies
+        }
+
+        profile: blackboxProfile
+
+
                 Connections {
                     target: plasmoid.configuration
 
